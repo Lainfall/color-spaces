@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Converter</title>
+    <script type="module" src="./main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="inputs">
+        <div class="input_container">
+          <label class="input_label" for="rgb">RGB</label>
+          <div class="multiple_inputs">
+            <input
+              class="input_rgb"
+              max="255"
+              min="0"
+              name="r_input"
+              placeholder="Red"
+              type="number"
+            />
+            <input
+              class="input_rgb"
+              max="255"
+              min="0"
+              name="g_input"
+              placeholder="Green"
+              type="number"
+            />
+            <input
+              class="input_rgb"
+              max="255"
+              min="0"
+              name="b_input"
+              placeholder="Blue"
+              type="number"
+            />
+          </div>
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="hex">Hex</label>
+          <input
+            class="input_text"
+            type="text"
+            name="hex"
+            placeholder="#000000"
+            maxlength="7"
+          />
+        </div>
+        <div class="input_container">
+          <label class="input_label">HSL</label>
+          <div class="multiple_inputs">
+            <input
+              class="input_hsl"
+              max="360"
+              min="0"
+              name="h_input"
+              placeholder="Hue"
+              type="number"
+            />
+            <input
+              class="input_hsl"
+              max="255"
+              min="0"
+              name="s_input"
+              placeholder="Saturation"
+              type="number"
+            />
+            <input
+              class="input_hsl"
+              max="255"
+              min="0"
+              name="l_input"
+              placeholder="Lightness"
+              type="number"
+            />
+          </div>
+        </div>
+      </div>
+
+      <button id="button_convert">Convert</button>
+    </main>
+  </body>
+</html>
